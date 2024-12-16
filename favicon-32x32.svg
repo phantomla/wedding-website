@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="none" />
+  <g>
+    <!-- Heart Motif -->
+    <path d="M100 120c-20-20-50-40-50-70 0-20 15-30 30-30 10 0 20 5 20 15s10-15 20-15c15 0 30 10 30 30 0 30-30 50-50 70z" fill="#FFB6C1" />
+    
+    <!-- A -->
+    <text x="50" y="100" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#D2691E">A</text>
+    
+    <!-- Heart -->
+    <path d="M100 90c4-8 16-8 20 0 4-8 16-8 20 0 8 16-20 28-20 28s-28-12-20-28z" fill="#FF6B6B" transform="translate(-10, 0)" />
+
+    <!-- N -->
+    <text x="130" y="100" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#D2691E">N</text>
+    
+    <!-- Decorative Line -->
+    <path d="M50 110 q50 40 100 0" stroke="#FFD700" stroke-width="3" fill="none" />
+  </g>
+</svg>

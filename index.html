@@ -1,0 +1,373 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Nhật Anh - Hồng Nhung - Lễ Cưới</title>
+    <meta name="description" content="We would like to invite you to our big day.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Ram & Antara getting hitched">
+    <meta property="og:description" content="We would like to invite you to our big day.">
+    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
+    <meta property="og:type" content="website">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.svg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <script>
+        // load css files from CDN if local node_modules fail
+        function loadCssFromCDN(css) {
+            // create new link tag
+            const link = document.createElement('link');
+            if (css === 'animate.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css';
+            } else if (css === 'font-awesome.css') {
+                link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+            }
+            link.rel = 'stylesheet';
+
+            // add link tag to head section
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+
+        // load js files from CDN if local node_modules fail
+        function loadJsFromCDN(js) {
+            if (js === 'waypoints.js') {
+                document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"><\/script>');
+            } else if (js === 'jquery.js') {
+                document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>');
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body id="top">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<section class="hero fadeIn">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/logo.svg" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#events">Sự Kiện</a></li>
+                            <li><a href="#intro">Giới Thiệu</a></li>
+                            <li><a href="#invitation">Lễ Cưới</a></li>
+                            <li><a href="#album">Album</a></li>
+                            <li><a href="#map">Bản Đồ</a></li>
+                            <li><a href="#qr">Mừng Cưới</a></li>
+                            <li><a href="#thanks">Lời Cảm Ơn</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="hero-content text-center">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 hidden-xs"></div>
+            <div class="col-sm-4 hidden-xs"></div>
+        </div>
+    </div>
+    <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+</section>
+
+<section id="events" class="section-padding fadeInUp">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>Chúng tôi chuẩn bị kết hôn</h3>
+                <p class="italic-text">Ngày 05 tháng 01 năm 2025 và bạn là một phần quan trọng của ngày đặc biệt của chúng tôi.</p>
+            </div>
+        </div>
+    </div>
+    <div class="calendar-timer-container">
+        <!-- Calendar -->
+        <div class="calendar">
+          <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <span id="monthYear"></span>
+            <button id="nextMonth">&gt;</button>
+          </div>
+          <div class="calendar-body">
+            <div class="day-names">
+              <span>Sun</span>
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+            </div>
+            <div class="days" id="days"></div>
+          </div>
+        </div>
+      
+        <!-- Timer -->
+        <div class="timer">
+            <h4 id="countdownTimer"></h4>
+        </div>
+      </div>        
+</section>
+
+<section id="intro" class="section-padding fadeIn">
+    <div class="flexslider">
+        <ul class="slides">
+          <li>
+              <img src="img/slider/slider1.jpg" alt="slider 1">
+          </li>
+          <li>
+              <img src="img/slider/slider2.jpg" alt="slider 2">
+          </li>
+          <li>
+              <img src="img/slider/slider3.jpg" alt="slider 3">
+          </li>
+          <li>
+            <img src="img/slider/slider4.jpg" alt="slider 4">
+        </li>
+        </ul>
+      </div>
+</section>
+
+
+
+<section class="section-padding" id="invitation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="header">Thông Tin Lễ Cưới</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center invitation-nam leftIn">
+                <span>Nhà Nam</span>
+                <img src="img/nam.jpg" alt="Nam" class="img-responsive">
+            </div>
+            <div class="col-md-6 text-center invitation-nu rightIn">
+                <span>Nhà Nữ</span>
+                <img src="img/nu.jpg" alt="Nu" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="album" class="section-padding fadeIn">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3 class="header">Hình Cưới</h3>
+            </div>
+        </div>
+        <div class="row images-wedding">
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image2.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image2.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image6.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image6.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image3.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image3.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image1.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image1.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image5.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image5.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a class="fancybox" rel="group" href="img/eng_pics/image4.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image4.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="">
+            <div class="col-md-3">
+                <a class="fancybox" rel="group" href="img/eng_pics/image7.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image7.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="fancybox" rel="group" href="img/eng_pics/image8.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image8.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="fancybox" rel="group" href="img/eng_pics/image9.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image9.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a class="fancybox" rel="group" href="img/eng_pics/image10.JPG">
+                    <div class="img-wrap">
+                        <div class="overlay">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <img src="img/eng_pics/image10.JPG" alt=""/>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row hidden-lg hidden-md hidden-xs">
+            <div class="col-xs-12 section-border section-padding"></div>
+        </div>
+    </div>
+</section>
+
+<section id="map" class="section-padding">
+    <div class="text-center">
+        <h3>Tìm đường đến lễ cưới!</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 leftIn">
+                <h5 class="text-center">Nhà Chú Rễ Nhật Anh</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2191.5842615683277!2d107.18929901854229!3d16.837717027653053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140e6a97059f581%3A0x36bf29188b27227d!2zVHJp4buHdSBQaMaw4bubYywgQuG7kyBC4bqjbiwgVHJp4buHdSBQaG9uZywgUXXhuqNuZyBUcuG7iywgVmlldG5hbQ!5e0!3m2!1sen!2suk!4v1734353672240!5m2!1sen!2suk" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6 rightIn">
+                <h5 class="text-center">Nhà Cô Dâu Hồng Nhung</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30545.966253781487!2d107.16676!3d16.863732!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3140e6ebf2f8ea49%3A0x9b4b1da16b16346!2zQW4gQ8awLCBUcmnhu4d1IFBoxrDhu5tjLCDEkMO0bmcgSMOgLCBRdeG6o25nIFRy4buLLCBWaWV0bmFt!5e0!3m2!1sen!2suk!4v1734353653624!5m2!1sen!2suk" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="qr" class="section-padding">
+    <div class="text-center">
+        <h3>Dễ dàng mừng cưới!!!</h3>
+    </div>
+    <div class="container">
+        <div class="row qr-group">
+            <div class="col-md-4 text-center leftIn">
+                <span class="qr-text">Chú Rể Cưới Được Vợ 😁😁😁</span>
+                <img src="img/qr1.jpg" alt="qr" class="responsive-image">
+            </div>
+            <div class="col-md-4 text-center rightIn">
+                <span class="qr-text">Cô Dâu Lấy Được Chồng 🥳🥳🥳</span>
+                <img src="img/qr_nu.jpg" alt="qr" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="thanks" class="section-padding">
+    <div class="text-center">
+        <h3>Lời Cảm Ơn!!!</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center fadeIn">
+                <span class="thanks-text">Vợ chồng chúng em xin chân thành cảm ơn các Chú, Bác, Cô, Gì, Anh, Chị, Bạn đã dành sự quan tâm và sẽ đến chung vui cùng vợ chồng chúng em. Trong quá trình tổ chức, nếu có điều gì sai sót, mong mọi người thông cảm và bỏ qua ạ.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center content">
+                <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+                <p>© 2024 lolstate.com. All rights reserved || Powered by TyronNA </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/vendor/ouical.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
+</html>
