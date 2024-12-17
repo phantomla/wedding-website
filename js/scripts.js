@@ -242,7 +242,7 @@ renderCalendar(currentDate);
                     "top": "26px",
                 });
                 $('header .navicon').css({
-                    "top": "34px",
+                    "top": "24px",
                 });
             } else {
                 $('section.navigation').removeClass('fixed');
