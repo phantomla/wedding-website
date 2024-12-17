@@ -1,4 +1,33 @@
 $(document).ready(function () {
+    // Function to get query parameters
+    function getQueryParam(param) {
+        var search = window.location.search.substring(1); // Remove the "?" at the beginning
+        var params = search.split("&");
+        for (var i = 0; i < params.length; i++) {
+            var pair = params[i].split("=");
+            if (decodeURIComponent(pair[0]) === param) {
+                return decodeURIComponent(pair[1]);
+            }
+        }
+        return null;
+    }
+
+    // Fetch and display the invite name
+    var inviteName = getQueryParam('invite');
+    var inviteAddress = getQueryParam('address');
+    if (inviteName) {
+        document.getElementById('inviteName').textContent = inviteName;
+    } else {
+        document.getElementById('inviteName').textContent = "Bạn Thân Mến";
+    }
+
+    if (inviteAddress) {
+        document.getElementById('inviteAddress').textContent = inviteAddress;
+    } else {
+        document.getElementById('inviteAddress').textContent = "Triệu Phước - Quảng Trị";
+    }
+
+
     // Define all animation classes you want to support
     var animationClasses = ['fadeIn', 'fadeInUp', 'leftIn', 'rightIn', 'fadeInDown'];
 
