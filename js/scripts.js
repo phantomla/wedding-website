@@ -236,13 +236,13 @@ renderCalendar(currentDate);
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "10px 0"
+                    "padding": "0px 0"
                 });
                 $('header .member-actions').css({
                     "top": "26px",
                 });
                 $('header .navicon').css({
-                    "top": "24px",
+                    "top": "14px",
                 });
             } else {
                 $('section.navigation').removeClass('fixed');

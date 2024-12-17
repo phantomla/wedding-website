@@ -296,6 +296,7 @@ Hero
   background-color: rgba(198, 47, 80, 0.88);
   z-index: 999;
   width: 100%;
+  opacity: 75%;
 }
 header {
   padding: 30px 0;
@@ -908,15 +909,15 @@ body.modal-open {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     z-index: 2;
-    font-size: 3rem; /* Adjust text size */
-    font-weight: bold; /* Bold text */
+    font-size: 5rem; /* Adjust text size */
+    // font-weight: bold; /* Bold text */
     color: white; /* Text color */
-    font-family: "Arial", sans-serif; /* Set font family */
     letter-spacing: 1px; /* Adjust letter spacing */
     line-height: 1.5; /* Improve text readability */
     padding: 0 20px; /* Optional: Add padding for smaller screens */
-    font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Imperial Script", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .flexslider .slides img {
@@ -950,7 +951,7 @@ body.modal-open {
   width: 350px;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -994,7 +995,7 @@ body.modal-open {
 .days div {
   padding: 14px 10px;
   cursor: pointer;
-  border: 1px solid #f4f4f4;
+  // border: 1px solid #f4f4f4;
   text-align: center;
 
 }
@@ -1015,7 +1016,6 @@ body.modal-open {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
@@ -1036,17 +1036,14 @@ body.modal-open {
 
 .timer h4 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #333;
   z-index: 2;
   position: relative;
-}
-
-.timer-text {
-  font-family: "Poppins", sans-serif;
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  animation: pulse 1s infinite;
+  font-family: "Shantell Sans", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @keyframes gradientAnimation {
@@ -1068,7 +1065,6 @@ body.modal-open {
 #countdownTimer {
   font-size: 1.3em;
   font-weight: bold;
-  width: 300px;
 }
 
 .day.marked {

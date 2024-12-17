@@ -3,7 +3,7 @@
 
 // Fonts
 
-$sans-serif: 'Open Sans', sans-serif;
+$sans-serif: 'Shantell Sans', cursive;
 $serif: Merriweather, Georgia, 'Times New Roman', serif;
 $accent-font: 'Nunito', sans-serif;
 
@@ -59,7 +59,6 @@ h3 {
   color: $h3-color;
   font-size: $font-size-h4;
   font-weight: $bold;
-  text-transform: uppercase;
   letter-spacing: 3px;
   line-height: $base-line-height;
 }
@@ -71,6 +70,5 @@ h4 {
 h5 {
   font-size: $font-size-h5;
   color: $h5-color;
-  text-transform: uppercase;
   font-weight: $semibold;
 }
