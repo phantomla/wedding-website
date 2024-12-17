@@ -1,4 +1,29 @@
 $(document).ready(function () {
+   // Flower container where flowers will appear
+    var flowerContainer = document.getElementById('flower-container');
+
+    // Function to create a single flower
+    function createFlower() {
+    var flower = document.createElement('div');
+    flower.classList.add('flower');
+    
+    // Use an emoji or image as the flower
+    flower.textContent = '❤️'; // You can replace this with an image
+    flower.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+    flower.style.animationDuration = Math.random() * 3 + 4 + 's'; // Random fall speed (2s to 5s)
+    flower.style.opacity = Math.random(); // Random opacity
+    
+    flowerContainer.appendChild(flower);
+
+    // Remove the flower after it finishes falling
+    setTimeout(function() {
+        flower.remove();
+    }, 5000);
+    }
+
+    // Generate flowers at intervals
+    setInterval(createFlower, 200); // Creates a flower every 200ms
+
     // Function to get query parameters
     function getQueryParam(param) {
         var search = window.location.search.substring(1); // Remove the "?" at the beginning
