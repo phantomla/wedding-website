@@ -1095,7 +1095,6 @@ body.modal-open {
 .qr-group {
   display: flex;
   justify-content: center;
-  gap: 20px;
 }
 .qr-text {
   font-size: 1.6rem;
@@ -1103,12 +1102,12 @@ body.modal-open {
 }
 
 .invitation-nam {
-  padding: 20px;
+  padding: 0px;
   font-weight: bold;
 }
 
 .invitation-nu {
-  padding: 20px;
+  padding: 0px;
   font-weight: bold;
 }
 
